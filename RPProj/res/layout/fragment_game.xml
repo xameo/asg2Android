@@ -1,0 +1,186 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical" android:gravity="center_vertical">
+
+    <TextView
+            android:id="@+id/heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Guess an integer number from 1 to 100"
+            android:textSize="17sp"
+            android:textStyle="bold" android:gravity="center_horizontal"/>
+
+    <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal" android:layout_marginLeft="5dp"
+            android:gravity="center_horizontal">
+        <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+            <TextView
+                    android:id="@+id/txtDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:textStyle="bold" android:layout_gravity="left"/>
+            <TextView
+                    android:id="@+id/txtTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:textStyle="bold" android:layout_gravity="right"/>
+        </TableRow>
+        <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" android:layout_marginTop="5dp" android:layout_marginBottom="10dp">
+            <TextView
+                    android:id="@+id/type_guess"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="      Type your guess:"
+                    android:textSize="14sp"
+                    android:textStyle="bold"/>
+            <EditText
+                    android:id="@+id/etGuess"
+                    android:layout_width="80dp"
+                    android:layout_height="35dp"
+                    android:background="#E5E5E5"
+                    android:textColor="#1c1c1c"
+                    android:textStyle="bold" android:layout_marginLeft="40dp"
+                    android:layout_marginRight="200dp" android:inputType="numberSigned"/>
+        </TableRow>
+        <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+            <EditText
+                    android:id="@+id/etNumValid"
+                    android:layout_width="40dp"
+                    android:layout_height="35dp"
+                    android:background="#E5E5E5"
+                    android:textColor="#1c1c1c"
+                    android:textStyle="bold"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginBottom="3dp"
+                    android:layout_marginLeft="20dp"
+                    android:focusable="false"/>
+            <TextView
+                    android:id="@+id/valid_trials_tw"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Valid trials out of 5"
+                    android:textSize="14sp"
+                    android:textStyle="bold"/>
+        </TableRow>
+        <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+            <EditText
+                    android:id="@+id/etNumInv"
+                    android:layout_width="80dp"
+                    android:layout_height="35dp"
+                    android:background="#E5E5E5"
+                    android:textColor="#1c1c1c"
+                    android:textStyle="bold"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginLeft="20dp"
+                    android:focusable="false"/>
+            <TextView
+                    android:id="@+id/invalid_trials_tw"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Invalid trials out of 3"
+                    android:textSize="14sp"
+                    android:textStyle="bold"/>
+        </TableRow>
+        <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+            <TextView
+                    android:id="@+id/message_tw"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Message:"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:layout_gravity="center"
+                    android:focusable="false"/>
+            <EditText
+                    android:id="@+id/etMessage"
+                    android:layout_width="40dp"
+                    android:layout_height="35dp"
+                    android:background="#E5E5E5"
+                    android:textColor="#1c1c1c"
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+                    android:focusable="false"/>
+        </TableRow>
+    </TableLayout>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal" android:gravity="center_horizontal">
+
+
+        <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="70dp"
+                android:layout_height="35dp"
+                android:text="OK"
+                android:id="@+id/btnOk"
+                android:layout_marginLeft="5dp"
+                android:background="#1c1c1c"
+                android:textColor="#f1f1f1"
+                android:textStyle="bold"/>
+        <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="70dp"
+                android:layout_height="35dp"
+                android:text="Clear"
+                android:id="@+id/btnClear"
+                android:background="#1c1c1c"
+                android:textColor="#f1f1f1"
+                android:textStyle="bold"
+                android:layout_marginLeft="5dp"/>
+        <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="70dp"
+                android:layout_height="35dp"
+                android:text="Exit"
+                android:id="@+id/btnExit"
+                android:background="#1c1c1c"
+                android:textColor="#f1f1f1"
+                android:textStyle="bold"
+                android:layout_marginLeft="5dp"/>
+        <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="115dp"
+                android:layout_height="35dp"
+                android:text="Start new game"
+                android:id="@+id/btnStartGame"
+                android:background="#1c1c1c"
+                android:textColor="#f1f1f1"
+                android:textStyle="bold"
+                android:layout_marginLeft="5dp"/>
+        <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="115dp"
+                android:layout_height="35dp"
+                android:text="Show Details"
+                android:id="@+id/btnShowDetails"
+                android:background="#1c1c1c"
+                android:textColor="#f1f1f1"
+                android:textStyle="bold"
+                android:layout_marginLeft="5dp"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>
+
+

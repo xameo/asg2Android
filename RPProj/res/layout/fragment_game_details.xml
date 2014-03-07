@@ -1,0 +1,134 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:orientation="vertical" android:gravity="center_vertical">
+
+    <TextView
+            android:id="@+id/heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:text="Game Details"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+    <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal">
+        <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" android:layout_marginBottom="10dp">
+            <TextView
+                    android:id="@+id/txtNumInv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+            <TextView
+                    android:id="@+id/txtInv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="60dp"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+            <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+            </TableRow>
+        </TableRow>
+        <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" android:layout_marginBottom="10dp">
+            <TextView
+                    android:id="@+id/txtNumVal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:textStyle="bold"/>
+            <TextView
+                    android:id="@+id/txtVal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="60dp"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+        </TableRow>
+        <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" android:layout_marginBottom="30dp">
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Random number: "
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+            <TextView
+                    android:id="@+id/txtRand"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:textStyle="bold" android:layout_marginLeft="60dp"/>
+        </TableRow>
+        <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" android:layout_marginBottom="10dp">
+            <TextView
+                    android:id="@+id/programmer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Programmers: "
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+            <TextView
+                    android:id="@+id/show_programmer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="60dp"
+                    android:text="Roman Protsko &amp; Victor Hilotii"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+        </TableRow>
+        <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+        </TableRow>
+    </TableLayout>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" android:gravity="center_horizontal">
+
+
+        <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="85dp"
+                android:layout_height="35dp"
+                android:text="Back"
+                android:id="@+id/btnBack"
+                android:background="#1c1c1c"
+                android:textColor="#f1f1f1"
+                android:textStyle="bold"
+                android:layout_marginLeft="260dp"/>
+        <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="85dp"
+                android:layout_height="35dp"
+                android:text="Get Notify"
+                android:id="@+id/btnGetNotify"
+                android:background="#1c1c1c"
+                android:textColor="#f1f1f1"
+                android:textStyle="bold"
+                android:layout_marginLeft="5dp" android:layout_gravity="center_horizontal"/>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
+
+
+
